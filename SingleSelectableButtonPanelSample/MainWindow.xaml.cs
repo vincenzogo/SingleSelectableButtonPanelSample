@@ -22,11 +22,12 @@ namespace SingleSelectableButtonPanelSample
     {
         public MainWindow()
         {
-            var profiles = new List<Profile> {
+            var profiles = new List<Profile>
+            {
                 new Profile { Name = "Al"},
-                       new Profile { Name = "John" },
-                              new Profile { Name = "Jack" }
-                };
+                new Profile { Name = "John" },
+                new Profile { Name = "Jack" }
+            };
             InitializeComponent();
             ContainerGrid.Children.Add(new SingleSelectableButtonPanel(profiles));
         }
